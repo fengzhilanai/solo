@@ -1,0 +1,52 @@
+# Dependencies (none expected — buildless — but keep ignored just in case)
+node_modules/
+
+# Build / deploy output
+dist/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs / temp
+*.log
+tmp/
+temp/
+
+# Cache files
+.npm_cache
+
+# Agent files
+.agent/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# Other common caches
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Package manager debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
