@@ -12,9 +12,16 @@
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var nav = document.querySelector('.nav');
+  var backToTop = document.querySelector('.back-to-top');
   var scrollTicking = false;
   function updateScrollState() {
     if (nav) nav.classList.toggle('is-scrolled', window.scrollY > 12);
+    if (backToTop) {
+      var canShowBackToTop = window.scrollY > 480;
+      backToTop.classList.toggle('is-visible', canShowBackToTop);
+      backToTop.setAttribute('aria-hidden', String(!canShowBackToTop));
+      backToTop.tabIndex = canShowBackToTop ? 0 : -1;
+    }
     scrollTicking = false;
   }
   window.addEventListener('scroll', function () {
@@ -24,6 +31,24 @@
     }
   }, { passive: true });
   updateScrollState();
+
+  if (backToTop) {
+    backToTop.addEventListener('click', function () {
+      try {
+        window.scrollTo({ top: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+      } catch (error) {
+        window.scrollTo(0, 0);
+      }
+      var top = document.getElementById('top');
+      if (top) {
+        try {
+          top.focus({ preventScroll: true });
+        } catch (error) {
+          top.focus();
+        }
+      }
+    });
+  }
 
   // 当前章节导航高亮
   var sectionLinks = document.querySelectorAll('[data-section-link]');
@@ -131,21 +156,13 @@
     });
   }
 
-  // FAQ 平滑展开：保留原生 details 语义
+  // FAQ 仅做轻量淡入，避免 max-height 测量和布局重排造成顿挫
   document.querySelectorAll('.faq-item').forEach(function (item) {
-    var answer = item.querySelector('.faq-a');
-    if (!answer) return;
-    item.addEventListener('toggle', function () {
-      if (reduceMotion.matches) return;
-      var targetHeight = item.open ? answer.scrollHeight : 0;
-      answer.style.maxHeight = item.open ? '0px' : answer.scrollHeight + 'px';
-      item.classList.add('is-animating');
-      requestAnimationFrame(function () { answer.style.maxHeight = targetHeight + 'px'; });
-      window.setTimeout(function () {
-        if (item.open) answer.style.maxHeight = 'none';
-        else answer.style.maxHeight = '';
-        item.classList.remove('is-animating');
-      }, 200);
+    var summary = item.querySelector('.faq-q');
+    if (!summary) return;
+    summary.addEventListener('click', function (event) {
+      event.preventDefault();
+      item.open = !item.open;
     });
   });
 
