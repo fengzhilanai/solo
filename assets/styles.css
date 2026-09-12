@@ -114,12 +114,11 @@ section { scroll-margin-top: 84px; }
 }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .nav-logo {
-  width: 34px; height: 34px;
-  background: var(--black);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 .nav-name { font-weight: 700; font-size: 16px; letter-spacing: 0.02em; }
 .nav-name small { display: block; font-size: 10px; font-weight: 500; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; }
