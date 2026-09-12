@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">风之岚科技 · AI 共创与定制实现</title>
+  <desc id="desc">面向个人创业者与小团队，从真实业务问题开始，做出能运行、能试用、也方便接手的第一版。</desc>
+  <rect width="1200" height="630" fill="#ff6600"/>
+  <circle cx="1080" cy="-20" r="260" fill="none" stroke="#000" stroke-width="3" opacity=".2"/>
+  <circle cx="1110" cy="560" r="150" fill="none" stroke="#000" stroke-width="3" opacity=".2"/>
+  <rect x="72" y="68" width="68" height="68" fill="#000"/>
+  <text x="106" y="119" text-anchor="middle" fill="#ff6600" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="42" font-weight="700">岚</text>
+  <text x="172" y="111" fill="#000" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">风之岚科技</text>
+  <text x="172" y="137" fill="#000" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">FENGZHILAN · AI TECHNOLOGY</text>
+  <text x="72" y="300" fill="#000" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="68" font-weight="700">AI 共创与</text>
+  <text x="72" y="378" fill="#000" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="68" font-weight="700">定制实现</text>
+  <rect x="76" y="438" width="620" height="3" fill="#000"/>
+  <text x="76" y="490" fill="#000" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="27" font-weight="500">面向个人创业者与小团队</text>
+  <text x="76" y="535" fill="#000" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="21">从一个真实业务问题开始，做出可以试用的第一版。</text>
+  <text x="1128" y="590" text-anchor="end" fill="#000" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">START SMALL · BUILD USEFUL</text>
+</svg>

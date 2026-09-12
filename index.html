@@ -4,28 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="creative-medium" content="interactive-prototype">
-  <title>AI 共创与定制实现 · 风之岚工作室｜个人创业者与小团队服务说明</title>
-  <meta name="description" content="面向个人创业者与 1～5 人小团队：先解决一个具体问题，做出能运行、能试用、也方便你接手的第一版。AI 项目诊断 ¥3,999 起，项目共创 ¥8,999，定制实现 ¥15,000 起。">
-  <link rel="stylesheet" href="assets/styles.css">
+  <title>AI 共创与定制实现 · 风之岚科技｜个人创业者与小团队服务说明</title>
+  <meta name="description" content="面向个人创业者与 1～5 人小团队：先从一个真实业务问题开始，做出一个可以实际试用、也方便你后续接手的第一版。AI 项目诊断 ¥3,999 起，项目共创 ¥8,999，定制实现 ¥15,000 起。">
+  <link rel="canonical" href="https://fengzhilanai.github.io/solo/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="风之岚科技">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="AI 共创与定制实现 · 风之岚科技">
+  <meta property="og:description" content="面向个人创业者与小团队，先从一个真实业务问题开始，做出一个可以实际试用、也方便后续接手的第一版。">
+  <meta property="og:url" content="https://fengzhilanai.github.io/solo/">
+  <meta property="og:image" content="https://fengzhilanai.github.io/solo/assets/og-image.png">
+  <meta property="og:image:secure_url" content="https://fengzhilanai.github.io/solo/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 共创与定制实现 · 风之岚科技">
+  <meta name="twitter:description" content="面向个人创业者与小团队，先从一个真实业务问题开始，做出一个可以实际试用、也方便后续接手的第一版。">
+  <meta name="twitter:image" content="https://fengzhilanai.github.io/solo/assets/og-image.png">
+  <link rel="stylesheet" href="assets/styles.css?v=20260912">
 </head>
 <body>
 
 <!-- ================= 导航 ================= -->
 <header class="nav">
   <div class="container nav-inner">
-    <a class="nav-brand" href="#top" aria-label="风之岚工作室首页">
+    <a class="nav-brand" href="#top" aria-label="风之岚科技首页">
       <span class="nav-logo">岚</span>
-      <span class="nav-name">风之岚工作室<small>FENGZHILAN · AI WORKSTUDIO</small></span>
+      <span class="nav-name">风之岚科技<small>FENGZHILAN · AI TECHNOLOGY</small></span>
     </a>
-    <nav aria-label="主导航">
+    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">菜单 <span aria-hidden="true">☰</span></button>
+    <nav class="desktop-nav" aria-label="主导航" data-section-nav>
       <ul class="nav-links">
-        <li><a href="#pick">30 秒判断</a></li>
-        <li><a href="#fit">适合开始吗</a></li>
-        <li><a href="#forms">做成什么</a></li>
-        <li><a href="#diagnostic">三种服务</a></li>
-        <li><a href="#boundaries">合作边界</a></li>
-        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#pick" data-section-link="pick">30 秒判断</a></li>
+        <li><a href="#fit" data-section-link="fit">适合开始吗</a></li>
+        <li><a href="#forms" data-section-link="forms">做成什么</a></li>
+        <li><a href="#diagnostic" data-section-link="diagnostic">项目服务</a></li>
+        <li><a href="#bootcamp" data-section-link="bootcamp">独立训练营</a></li>
+        <li><a href="#boundaries" data-section-link="boundaries">合作边界</a></li>
+        <li><a href="#faq" data-section-link="faq">常见问题</a></li>
       </ul>
+    </nav>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden>
+      <a href="#pick">选择路径</a>
+      <a href="#forms">成果方向</a>
+      <a href="#diagnostic">项目服务</a>
+      <a href="#bootcamp">独立训练营</a>
+      <a href="#boundaries">合作边界</a>
+      <a href="#faq">常见问题</a>
+      <a class="mobile-nav-cta" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">提交咨询</a>
     </nav>
     <div class="nav-cta">
       <span class="version-badge">1 个工作日内回复</span>
@@ -43,20 +71,20 @@
   <span class="hero-circle c3" aria-hidden="true"></span>
   <div class="container hero-inner">
     <div>
-      <span class="badge-pill">个人创业者 · 独立顾问 · 自由职业者 · 1～5 人小团队</span>
-      <h1>从一个问题开始<br>做出第一版<br>能运行、能试用<br>你也接得住</h1>
-      <p class="hero-sub">如果你已有真实业务、客户、订单、用户或明确的产品想法，却被重复工作、工具衔接或不会做产品技术实现拖住——我们从一个边界清楚的问题开始。</p>
-      <p class="hero-deco serif-i">Diagnose it. Build it together. Or hand it to us.</p>
-      <div class="hero-actions">
+      <span class="badge-pill">个人创业者 · 独立顾问 · 自由职业者 · 小型团队</span>
+      <h1>选择<br>适合你的路径</h1>
+      <p class="hero-sub">如果你有一个真实业务问题，我们先把它缩小，做出一个可以实际试用、也方便你后续接手的第一版。</p>
+      <div class="hero-actions" data-primary-cta>
         <a class="btn btn--black" href="#pick">30 秒判断我适合哪种
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="btn" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">直接提交咨询</a>
       </div>
     </div>
 
     <div class="hero-card">
-      <div class="hero-card-head">三种项目服务 <span>PICK BY SITUATION</span></div>
+      <div class="hero-card-head">选择适合你的路径 <span>PICK YOUR PATH</span></div>
+      <p class="hero-card-intro">按你现在的参与方式与目标，先选一条路径</p>
+      <div class="path-group-label">项目服务 <small>先解决一个真实业务问题</small></div>
       <a class="hero-row" href="#diagnostic">
         <span class="hr-no">01</span>
         <span><b>AI 项目诊断</b><small>有问题或想法，但不确定先做什么、做成什么</small></span>
@@ -71,14 +99,15 @@
       </a>
       <a class="hero-row" href="#custom">
         <span class="hr-no">03</span>
-        <span><b>AI 定制实现</b><small>范围相对清楚，希望工作室主导落地</small></span>
+        <span><b>AI 定制实现</b><small>范围相对清楚，希望由我们负责落地</small></span>
         <span class="hr-meta"><em>¥15,000 起</em><i>评估后确认</i></span>
         <span class="hr-arrow" aria-hidden="true">→</span>
       </a>
-      <a class="hero-row" href="#bootcamp">
+      <div class="path-group-label path-group-label--dark">独立学习路径 <small>首期意向招募 · 不是项目外包</small></div>
+      <a class="hero-row hero-row--training" href="#bootcamp">
         <span class="hr-no">04</span>
-        <span><b>AI 实战训练营</b><small>想学方法并亲手完成？首期意向招募中，独立报名</small></span>
-        <span class="hr-meta"><em>¥5,980</em><i>意向招募</i></span>
+        <span><b>AI 实战训练营</b><small>想学方法并亲手完成一个小成果？</small></span>
+        <span class="hr-meta"><em>¥5,980</em><i>首期意向招募</i></span>
         <span class="hr-arrow" aria-hidden="true">→</span>
       </a>
     </div>
@@ -98,13 +127,10 @@
   <div class="container">
     <div class="sec-head" data-reveal>
       <span class="sec-num">01</span>
-      <div>
-        <h2>30 秒判断你适合哪一种</h2>
-        <p class="serif-i">Chosen by your situation, not by the final shape.</p>
-      </div>
+      <div><h2>30 秒判断你适合哪一种</h2></div>
     </div>
 
-    <p class="lead" data-reveal>三项服务按<b>你现在的情况和希望参与的程度</b>选择，不按最后要做成网站、自动化流程还是应用来选。</p>
+    <p class="lead" data-reveal>三种项目服务按<b>你现在的情况和希望参与的程度</b>选择，不按最后要做成网站、自动化流程还是应用来选；训练营是独立的学习路径。</p>
 
     <div class="cmp-wrap" style="margin-top:28px" data-reveal>
       <table class="cmp-table">
@@ -127,35 +153,28 @@
             <td class="p-price"><em>¥8,999</em><br>4 周</td>
           </tr>
           <tr>
-            <td>目标、使用者和范围相对清楚，希望工作室主导落地</td>
+            <td>目标、使用者和范围相对清楚，希望由我们负责落地</td>
             <td class="p-name"><a href="#custom">AI 定制实现 →</a></td>
             <td class="p-price"><em>¥15,000 起</em><br>评估后确认</td>
+          </tr>
+          <tr>
+            <td>想学习方法并亲手完成一个 AI 小成果</td>
+            <td class="p-name"><a href="#bootcamp">AI 实战训练营 →</a></td>
+            <td class="p-price"><em>¥5,980</em><br>首期意向招募</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <div class="deli-grid" style="margin-top:22px" data-reveal>
-      <div class="deli">
-        <span class="step-no">A</span>
-        <b>「第一版」是什么</b>
-        <p>先做一个不大的、可以实际试用的版本，而不是一开始建设完整系统。</p>
-      </div>
-      <div class="deli">
-        <span class="step-no">B</span>
-        <b>「验收」是什么</b>
-        <p>按照事先说好的标准，一起确认是否完成，标准在启动前书面写清。</p>
-      </div>
-      <div class="deli">
-        <span class="step-no">C</span>
-        <b>「第三方费用」是什么</b>
-        <p>域名、软件订阅、AI 使用费、服务器等需要支付给其他服务商的费用，默认另计。</p>
-      </div>
+      <div class="deli"><span class="step-no">A</span><b>第一版</b><p>先做一个可以实际试用的小版本，不是一开始建设完整系统。</p></div>
+      <div class="deli"><span class="step-no">B</span><b>验收</b><p>按启动前书面确认的标准，一起确认是否完成。</p></div>
+      <div class="deli"><span class="step-no">C</span><b>第三方费用</b><p>域名、订阅、模型调用、服务器等费用默认另计。</p></div>
     </div>
 
     <div class="honest-note" style="margin-top:22px" data-reveal>
       <b>本页不是付款页面</b>
-      付款前，工作室会提供并确认具体项目方案、服务协议、付款与退款/取消/改期规则、协议签署主体、发票信息、第三方费用和验收方式。这些信息确认前，不建议先行付款。
+      付款前会书面确认方案、范围、交付、验收、付款规则、第三方费用和协议主体；确认前不建议付款。
     </div>
   </div>
 </section>
@@ -167,8 +186,7 @@
       <span class="sec-num">02</span>
       <div>
         <h2>你是否适合现在开始</h2>
-        <p class="serif-i">A real problem beats a vague wish list.</p>
-      </div>
+              </div>
     </div>
 
     <div class="fit-grid" data-reveal>
@@ -196,10 +214,15 @@
           <li>关键规则只能依赖临时判断，且无法安排审核人。</li>
           <li>没有可用于试用的材料或真实场景。</li>
           <li>要求固定周期内完成范围未定的大型网站或 App。</li>
-          <li>希望系统或工作室替你承担法律、医疗、财务等不能转移的专业责任。</li>
+          <li>希望系统或我们替你承担法律、医疗、财务等不能转移的专业责任。</li>
           <li>预期项目本身保证收入、流量、销量或固定节省比例。</li>
         </ul>
       </div>
+    </div>
+
+    <div class="next-step-card" data-reveal>
+      <div class="block-head">如果现在还不适合启动</div>
+      <p>可以先用低成本方式准备：记录一周内反复出现的人工工作，明确一类目标使用者，整理一条真实流程，准备脱敏或模拟材料，先人工跑通一次核心步骤，再决定是否需要诊断或实现。</p>
     </div>
 
     <div class="fact-strip" data-reveal>
@@ -215,8 +238,7 @@
       <span class="sec-num">03</span>
       <div>
         <h2>可以做成什么</h2>
-        <p class="serif-i">Problem first. Shape second.</p>
-      </div>
+              </div>
     </div>
 
     <p class="lead" data-reveal>我们先判断业务问题，再选择成果形态。下面是常见的第一版方向，具体页面、功能、数据和验收标准会在项目方案中书面确认。</p>
@@ -276,11 +298,10 @@
       <span class="sec-num">04</span>
       <div>
         <h2>项目怎样推进</h2>
-        <p class="serif-i">Four moves, one checkable scope.</p>
-      </div>
+              </div>
     </div>
 
-    <div class="steps" data-reveal>
+    <div class="steps" data-process-steps data-reveal>
       <div class="step">
         <span class="step-no">01</span>
         <span class="step-tag">对齐目标</span>
@@ -307,15 +328,25 @@
       </div>
     </div>
 
-    <div class="brutal-card" style="margin-top:24px" data-reveal>
-      <div class="block-head">合作前就会书面确认</div>
+    <div class="brutal-card payment-check" style="margin-top:24px" data-reveal>
+      <div class="block-head">付款前先确认这些信息</div>
       <ul class="confirm-chips">
-        <li>目标</li><li>使用者</li><li>包含项</li><li>排除项</li><li>交付物</li>
-        <li>双方分工</li><li>周期</li><li>验收方式</li><li>数据与账号处理</li>
-        <li>第三方费用</li><li>成果归属</li><li>支持边界</li>
+        <li>范围与排除项</li><li>交付物与验收</li><li>周期与分工</li><li>付款与第三方费用</li>
+        <li>退款/取消/改期</li><li>数据与账号</li><li>签约与发票主体</li><li>成果归属</li>
       </ul>
-      <p class="cmp-note" style="margin-top:16px">涉及 AI 或自动化时，还会明确<b>人工审核人是谁、异常如何发现、失败怎样处理，以及如何回到原有做法</b>。</p>
+      <p class="cmp-note" style="margin-top:16px"><b>以上信息确认前，不建议付款。</b></p>
     </div>
+
+    <details class="rule-details" data-reveal>
+      <summary>展开看完整合作确认项 <span aria-hidden="true">＋</span></summary>
+      <div class="rule-details-body">
+        <ul class="confirm-chips">
+          <li>目标与使用者</li><li>包含与排除项</li><li>交付物与验收</li><li>双方分工与周期</li>
+          <li>数据与账号处理</li><li>第三方费用</li><li>成果归属</li><li>支持边界</li>
+        </ul>
+        <p class="cmp-note" style="margin-top:16px">涉及 AI 或自动化时，还会明确<b>人工审核人是谁、异常如何发现、失败怎样处理，以及如何回到原有做法</b>。</p>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -326,8 +357,7 @@
       <span class="sec-num">05</span>
       <div>
         <h2>AI 项目诊断：想改变，但不确定先做什么</h2>
-        <p class="serif-i">A written report before you spend on a build.</p>
-      </div>
+              </div>
     </div>
 
     <div class="product-grid">
@@ -377,7 +407,9 @@
           <p class="ic-value sans">5 个工作日</p>
           <p class="ic-sub">资料齐备并完成启动确认后起算</p>
         </div>
-        <a class="btn btn--orange btn-block" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">咨询 AI 项目诊断</a>
+        <a class="btn btn--orange btn-block" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">提交诊断咨询</a>
+        <p class="cta-note">仅提交咨询，不会自动付款；正式方案与协议确认后再决定。</p>
+        <p class="cta-note">诊断报告交付后 30 天内启动后续项目时，抵扣金额和方式以书面方案为准。</p>
         <div class="honest-note">
           <b>诊断费可抵扣</b>
           报告交付后 30 天内启动项目共创或定制实现，已支付的诊断费用可按约定抵扣后续项目款，具体金额和抵扣方式写入后续项目方案。
@@ -394,8 +426,7 @@
       <span class="sec-num">06</span>
       <div>
         <h2>AI 项目共创：共同做出第一版</h2>
-        <p class="serif-i">Four weeks. You understand it. You can run it.</p>
-      </div>
+              </div>
     </div>
 
     <div class="product-grid">
@@ -410,7 +441,7 @@
             <table class="cmp-table">
               <thead>
                 <tr>
-                  <th>周次</th><th>本周重点</th><th>工作室推进</th><th>客户参与</th><th>阶段结果</th>
+                  <th>周次</th><th>本周重点</th><th>我们推进</th><th>客户参与</th><th>阶段结果</th>
                 </tr>
               </thead>
               <tbody>
@@ -471,7 +502,7 @@
             <li>大规模数据迁移、长期内容生产；</li>
             <li>复杂第三方系统集成、无限次修改。</li>
           </ul>
-          <p class="cmp-note" style="margin-top:12px">如果工作室需要承担大部分开发、内容生产、数据整理或上线工作，会缩小范围、分阶段推进，或改用 AI 定制实现。实际包含项、排除项和修改次数以启动时书面范围为准。</p>
+          <p class="cmp-note" style="margin-top:12px">如果我们需要承担大部分开发、内容生产、数据整理或上线工作，会缩小范围、分阶段推进，或改用 AI 定制实现。实际包含项、排除项和修改次数以启动时书面范围为准。</p>
         </div>
       </div>
 
@@ -486,10 +517,11 @@
           <p class="ic-value sans">4 周 · 每周 2～3 小时</p>
           <p class="ic-sub">4 次 60～90 分钟工作会</p>
         </div>
-        <a class="btn btn--black btn-block" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">咨询项目共创</a>
+        <a class="btn btn--black btn-block" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">提交共创咨询</a>
+        <p class="cta-note">仅提交咨询，不会自动付款；正式方案与协议确认后再决定。</p>
         <div class="honest-note">
           <b>延期规则</b>
-          因客户未按约提供资料、决定或试用反馈导致延期，可免费顺延一次、最长 1 周；继续延期、增加辅导或范围变化需重新确认排期和费用。工作室原因造成的延期不占用该规则。
+          因客户未按约提供资料、决定或试用反馈导致延期，可免费顺延一次、最长 1 周；继续延期、增加辅导或范围变化需重新确认排期和费用。我们原因造成的延期不占用该规则。
         </div>
       </aside>
     </div>
@@ -502,15 +534,14 @@
     <div class="sec-head" data-reveal>
       <span class="sec-num">07</span>
       <div>
-        <h2>AI 定制实现：工作室主导直接落地</h2>
-        <p class="serif-i">You keep the decisions; we carry the build.</p>
-      </div>
+        <h2>AI 定制实现：由我们负责落地</h2>
+              </div>
     </div>
 
     <div class="product-grid">
       <div class="product-main">
         <div class="brutal-card" data-reveal>
-          <p class="lead"><b>适合你：</b>目标、实际使用的人、负责人和第一版范围相对清楚，但你不希望自己完成完整实现过程，希望工作室主导设计、实现、试用、验收和交接。</p>
+          <p class="lead"><b>适合你：</b>目标、实际使用的人、负责人和第一版范围相对清楚，但你不希望自己完成完整实现过程，希望由我们负责设计、实现、试用、验收和交接。</p>
         </div>
 
         <div class="brutal-card" data-reveal>
@@ -553,7 +584,7 @@
 
         <div class="brutal-card" data-reveal>
           <div class="block-head">你的参与</div>
-          <p style="font-size:14.5px;color:#333">提供有权使用的业务材料和必要权限，对关键取舍作出业务判断，安排实际使用者试用，并由指定负责人完成验收。委托实现不等于把业务责任、最终发布、专业判断或合规责任全部转移给工作室。</p>
+          <p style="font-size:14.5px;color:#333">提供有权使用的业务材料和必要权限，对关键取舍作出业务判断，安排实际使用者试用，并由指定负责人完成验收。委托实现不等于把业务责任、最终发布、专业判断或合规责任全部转移给我们。</p>
         </div>
 
         <div class="brutal-card" data-reveal>
@@ -573,7 +604,8 @@
           <p class="ic-value sans">4～8 周 · 50/30/20</p>
           <p class="ic-sub">常见项目参考区间，非固定承诺。50% 启动 · 30% 进入真实试用 · 20% 验收，第三方费用另计</p>
         </div>
-        <a class="btn btn--black btn-block" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">咨询定制实现</a>
+        <a class="btn btn--black btn-block" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">提交定制咨询</a>
+        <p class="cta-note">仅提交咨询，不会自动付款；起步价不是固定总价，正式范围确认后报价。</p>
         <div class="honest-note">
           <b>起步价适用条件</b>
           通常只适用于单一核心路径、较少角色、有限页面或流程、已有可用材料、较少外部系统连接，且不涉及复杂数据迁移、特殊权限、安全合规或长期运营。涉及多角色、多数据源、复杂后台、支付、外部审核或较多接口时，最终价格可能明显高于起步价。
@@ -590,20 +622,20 @@
       <span class="sec-num">08</span>
       <div>
         <h2>AI 实战训练营｜首期意向招募</h2>
-        <p class="serif-i" style="color:#bdbdbd">Want to learn and build it yourself? This is a separate track.</p>
-      </div>
+              </div>
     </div>
 
     <div class="bootcamp-grid">
       <div class="bc-left" data-reveal>
-        <p><b style="color:#fff">训练营和项目服务不是同一件事。</b>训练营的购买结果是学习基本方法、亲手完成关键操作，并带走一项属于自己的小成果；它不是低价外包，也不承诺工作室替每位参与者完成完整网站、App 或商业产品。</p>
+        <p><b style="color:#fff">训练营和项目服务不是同一件事。</b>训练营的购买结果是学习基本方法、亲手完成关键操作，并带走一项属于自己的小成果；它不是低价外包，也不承诺我们替每位参与者完成完整网站、App 或商业产品。</p>
         <p><b style="color:#fff">适合你：</b>已有真实业务或要验证的任务，希望把 AI 用进资料整理、内容生产、方案准备、客户跟进、知识维护或产品验证，并愿意带着电脑动手操作、作业务判断和完成试用。</p>
         <div class="bc-price">¥5,980</div>
         <p class="bc-price-sub">当前为首期意向招募：填写咨询表用于了解需求和适配情况，不代表录取、锁定名额或完成报名；开班日期、名额、形式与付款退款规则以首期招生说明和报名确认为准。</p>
         <div class="bc-actions">
-          <a class="btn btn--orange" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">咨询表选「训练营首期意向」</a>
+          <a class="btn btn--orange" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">登记训练营首期意向</a>
           <a class="btn btn--ghost" href="https://qcnrt01y72yf.feishu.cn/wiki/MWM5wGTVIivMzYkmuPicUXVOnjh" target="_blank" rel="noopener">查看首期招生说明 ↗</a>
         </div>
+        <p class="cta-note cta-note--dark">请在咨询类型中选择“AI 实战训练营｜首期意向”；仅用于了解需求，不代表报名、录取或付款。</p>
       </div>
 
       <div data-reveal>
@@ -637,8 +669,7 @@
       <span class="sec-num">09</span>
       <div>
         <h2>合作、数据与交付边界</h2>
-        <p class="serif-i">The fine print, written plainly.</p>
-      </div>
+              </div>
     </div>
 
     <div class="bound-grid" data-reveal>
@@ -655,22 +686,22 @@
       <div class="bound">
         <span class="bound-no">03</span>
         <b>个人信息与业务数据</b>
-        <p>涉及个人信息、商业秘密或受监管数据时，方案中确认用途、访问范围、保存位置和清理方式。项目最终发布、专业判断和合规责任不能默认转移给系统或工作室。</p>
+        <p>涉及个人信息、商业秘密或受监管数据时，方案中确认用途、访问范围、保存位置和清理方式。项目最终发布、专业判断和合规责任不能默认转移给系统或我们。</p>
       </div>
       <div class="bound">
         <span class="bound-no">04</span>
         <b>第三方费用</b>
-        <p>订阅、模型调用、域名、托管、短信、存储、支付、审核和上架等费用不默认包含在项目价格内；由谁购买、持有账号和承担费用写入方案。第三方服务的可用性、价格、接口和政策变化不由工作室单独保证。</p>
+        <p>订阅、模型调用、域名、托管、短信、存储、支付、审核和上架等费用不默认包含在项目价格内；由谁购买、持有账号和承担费用写入方案。第三方服务的可用性、价格、接口和政策变化不由我们单独保证。</p>
       </div>
       <div class="bound">
         <span class="bound-no">05</span>
         <b>成果归属与复用</b>
-        <p>定制成果、源代码、配置、设计文件和账号归属以正式方案和协议为准。工作室可保留通用方法、非客户专属组件和不含客户信息的经验；客户名称、数据、截图、评价和案例只有获得单独授权后才能公开。</p>
+        <p>定制成果、源代码、配置、设计文件和账号归属以正式方案和协议为准。我们可保留通用方法、非客户专属组件和不含客户信息的经验；客户名称、数据、截图、评价和案例只有获得单独授权后才能公开。</p>
       </div>
       <div class="bound">
         <span class="bound-no">06</span>
         <b>经营结果边界</b>
-        <p>工作室承诺书面范围内的交付、试用、验收和约定缺陷支持，不承诺流量、收入、融资、获客、销量、转化率或固定节省比例等受多重因素影响的经营结果。</p>
+        <p>我们承诺书面范围内的交付、试用、验收和约定缺陷支持，不承诺流量、收入、融资、获客、销量、转化率或固定节省比例等受多重因素影响的经营结果。</p>
       </div>
     </div>
   </div>
@@ -683,11 +714,10 @@
       <span class="sec-num">10</span>
       <div>
         <h2>常见问题</h2>
-        <p class="serif-i">Before you ask.</p>
-      </div>
+              </div>
     </div>
 
-    <div class="faq-list" data-reveal>
+    <div class="faq-list" data-faq-list data-reveal>
       <details class="faq-item">
         <summary class="faq-q">我不懂编程，可以合作吗？<span class="faq-icon" aria-hidden="true"></span></summary>
         <div class="faq-a">可以。项目共创和定制实现更看重真实问题、材料、业务判断和试用条件，<b>不要求你先学会编程</b>。具体是否需要技术基础，会在训练主题或项目方案中说明。</div>
@@ -702,7 +732,7 @@
       </details>
       <details class="faq-item">
         <summary class="faq-q">项目共创和定制实现有什么区别？<span class="faq-icon" aria-hidden="true"></span></summary>
-        <div class="faq-a">项目共创是双方共同推进，客户每周投入约 2～3 小时并参与配置、决定和试用；定制实现由工作室主导完成，但客户仍需提供材料、权限、业务判断、试用人员和验收。两者都从边界清楚的第一版开始。</div>
+        <div class="faq-a">项目共创是双方共同推进，客户每周投入约 2～3 小时并参与配置、决定和试用；定制实现由我们负责完成，但客户仍需提供材料、权限、业务判断、试用人员和验收。两者都从边界清楚的第一版开始。</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">4 周能完成我的网站或 App 吗？<span class="faq-icon" aria-hidden="true"></span></summary>
@@ -753,7 +783,7 @@
       <div class="cs-card">
         <span class="cs-no">02</span>
         <b>人工判断</b>
-        <p>工作室判断是否适合继续沟通，必要时只补充关键信息。</p>
+        <p>我们判断是否适合继续沟通，必要时只补充关键信息。</p>
       </div>
       <div class="cs-card">
         <span class="cs-no">03</span>
@@ -767,7 +797,7 @@
       </div>
     </div>
 
-    <div class="hero-actions" data-reveal>
+    <div class="hero-actions" data-reveal data-final-cta>
       <a class="btn btn--black" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">填写 AI 项目合作咨询表
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
@@ -788,11 +818,12 @@
       </div>
     </div>
 
-    <p class="final-note" data-reveal><b>信息处理：</b>提交信息仅用于本次项目合作判断、联系和必要跟进，请勿提交密码、API Key、访问令牌或敏感业务数据；未进入合作的咨询信息最多保留 6 个月，不用于未经授权的公开展示或客户案例；可再次提交并标注“信息处理申请”查阅、更正或删除。付款、发票与协议签署主体会在正式报价与协议中明确并在付款前提供核对——如无法确认主体信息，不建议先行付款。</p>
   </div>
 </section>
 
 </main>
+
+<a class="btn btn--black mobile-fixed-cta" href="https://qcnrt01y72yf.feishu.cn/share/base/form/shrcn53nHKog9UxwnaIaE82swZe" target="_blank" rel="noopener">提交咨询</a>
 
 <!-- ================= 页脚 ================= -->
 <footer class="footer">
@@ -801,9 +832,9 @@
       <div>
         <a class="nav-brand" href="#top">
           <span class="nav-logo">岚</span>
-          <span class="nav-name">风之岚工作室<small>FENGZHILAN · AI WORKSTUDIO</small></span>
+          <span class="nav-name">风之岚科技<small>FENGZHILAN · AI TECHNOLOGY</small></span>
         </a>
-        <p class="footer-desc">面向个人创业者与小团队：先解决一个具体问题，做出能运行、能试用、也方便你接手的第一版。</p>
+        <p class="footer-desc">面向个人创业者与小团队：先从一个真实业务问题开始，做出一个可以实际试用、也方便你后续接手的第一版。</p>
       </div>
       <div>
         <h4>项目服务</h4>
@@ -826,7 +857,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> 风之岚工作室 · 所有价格含税，可开具发票，第三方服务费用另计</span>
+      <span>© <span id="year">2026</span> 风之岚科技 · 所有价格含税，可开具发票，第三方服务费用另计</span>
       <span class="privacy-note">不承诺流量、收入、获客等经营结果 · 价格、周期与规则以启动前书面确认为准</span>
     </div>
   </div>
