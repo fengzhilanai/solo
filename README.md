@@ -51,15 +51,12 @@ http://localhost:8000/
 
 ## 发布
 
-本项目适合使用 GitHub Pages 从仓库根目录直接发布：
+本项目使用 GitHub Pages 从 `main` 分支的仓库根目录发布。
 
-1. 在仓库的 **Settings → Pages** 中选择 **Deploy from a branch**。
-2. 选择发布分支（通常为 `main`）。
-3. 选择目录 `/ (root)`。
-4. 保存后等待 GitHub Pages 完成部署。
-5. 部署完成后，在 `index.html` 中将 `canonical`、`og:url`、`og:image`、`og:image:secure_url` 和 `twitter:image` 的占位地址替换为正式站点地址。
+网站地址：
 
-当前页面中的正式域名和仓库路径需要以实际 GitHub Organization、仓库名及 Pages 配置为准，不要直接沿用占位 URL。当前仓库计划使用名称 `solo`，组织为 `fengzhilanai`；仓库重命名并启用 Pages 后，请将页面元信息更新为对应的正式地址。
+**https://fengzhilanai.github.io/solo/**
+
 
 ## 内容与合作边界
 

@@ -235,17 +235,15 @@ section { scroll-margin-top: 84px; }
   color: #fff;
   border: 2px solid var(--black);
   box-shadow: var(--shadow-lg);
-  overflow: hidden;
 }
 .hero-card-head {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 20px 22px;
-  border-top: 4px solid var(--orange);
+  padding: 16px 20px;
   border-bottom: 2px solid var(--orange);
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
 }
 .hero-card-head span {
   font-size: 10px;
@@ -253,38 +251,38 @@ section { scroll-margin-top: 84px; }
   color: var(--orange);
 }
 .hero-row {
-  display: grid;
-  grid-template-columns: 40px minmax(0, 1fr) minmax(112px, 150px) 28px;
+  display: flex;
   align-items: center;
   gap: 14px;
-  min-height: 88px;
-  padding: 18px 22px;
+  padding: 16px 20px;
   text-decoration: none;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-  transition: background 0.15s ease, box-shadow 0.15s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background 0.15s ease;
 }
 .hero-row:last-child { border-bottom: none; }
-.hero-row:hover,
-.hero-row:focus-visible { background: rgba(255, 102, 0, 0.18); box-shadow: inset 4px 0 0 var(--orange); }
+.hero-row:hover { background: rgba(255, 102, 0, 0.18); }
 .hr-no {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 30px;
+  font-size: 26px;
   color: var(--orange);
-  width: 40px;
+  width: 34px;
   flex-shrink: 0;
 }
-.hero-row b { display: block; font-size: 16px; line-height: 1.35; }
-.hero-row small { display: block; margin-top: 3px; color: #c8c8c8; font-size: 13px; line-height: 1.5; font-weight: 500; word-break: keep-all; }
-.hero-row > span:nth-child(2), .hr-meta { min-width: 0; }
-.hr-meta { min-width: 112px; text-align: right; }
-.hero-row--training { background: rgba(255, 255, 255, 0.035); }
-.hero-row--training .hr-no {
-  visibility: visible;
-  width: 40px;
+.hero-row b { display: block; font-size: 15px; }
+.hero-row small { display: block; color: #bdbdbd; font-size: 12px; font-weight: 500; }
+.hr-meta { margin-left: auto; text-align: right; flex-shrink: 0; }
+.hr-meta em {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 19px;
   color: var(--orange);
+  line-height: 1.2;
 }
+.hr-meta i { font-style: normal; font-size: 11px; color: #bdbdbd; letter-spacing: 0.08em; }
+.hr-arrow { color: var(--orange); font-size: 18px; flex-shrink: 0; }
 .hr-meta em {
   display: block;
   font-family: var(--font-serif);
@@ -456,8 +454,8 @@ section { scroll-margin-top: 84px; }
 /* ============ 产品详情 ============ */
 .product { padding: 72px 0; border-top: 4px solid var(--black); }
 .product-grid {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 320px !important;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 28px;
   align-items: start;
 }
@@ -980,7 +978,16 @@ section { scroll-margin-top: 84px; }
   .hero-card-intro { display: none; }
   .path-grid { grid-template-columns: 1fr; }
   .fit-grid, .steps, .deli-grid { grid-template-columns: 1fr; }
-  .product-aside { grid-template-columns: 1fr; position: static; }
+  .product-grid, .diagnostic-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .product-aside {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    order: initial;
+  }
   .bound-grid { grid-template-columns: 1fr; }
   .consult-steps { grid-template-columns: 1fr; }
   .verify-grid { grid-template-columns: 1fr; }
@@ -1005,93 +1012,6 @@ section { scroll-margin-top: 84px; }
   .hero-row .hr-no { width: 28px; font-size: 22px; visibility: visible; }
   .hero-card-head { padding: 15px 16px; font-size: 16px; }
   .path-group-label { padding-left: 16px; padding-right: 16px; }
-}
-
-
-/* 平板横屏/小笔记本仍保持正文与价格栏并排，只有手机才改为单列 */
-@media (min-width: 481px) and (max-width: 800px) {
-  .product-grid, .diagnostic-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 280px;
-    gap: 18px;
-  }
-  .product-main { order: initial; }
-  .product-aside {
-    order: initial;
-    display: flex;
-    position: sticky;
-    top: 88px;
-  }
-}
-
-/* 产品区布局最终覆盖：电脑和平板始终保持价格栏在右侧 */
-@media (min-width: 400px) {
-  .product-grid,
-  .diagnostic-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 320px) !important;
-    align-items: start;
-  }
-  .product-main,
-  .product-aside { order: initial !important; }
-  .product-aside {
-    display: flex !important;
-    position: sticky !important;
-    top: 88px;
-  }
-}
-
-/* 电脑端最终布局：价格栏始终与正文并排 */
-@media (min-width: 600px) {
-  .product-grid,
-  .diagnostic-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 320px !important;
-    gap: 28px !important;
-    align-items: start !important;
-  }
-  .product-main,
-  .product-aside { order: initial !important; }
-  .product-aside {
-    display: flex !important;
-    position: sticky !important;
-    top: 88px !important;
-  }
-}
-
-/* 桌面设备按输入能力保持双栏，不受浏览器缩放后的 CSS 宽度断点影响 */
-@media (hover: hover) and (pointer: fine) {
-  .product-grid,
-  .diagnostic-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 320px !important;
-    gap: 28px;
-    align-items: start;
-  }
-  .product-main,
-  .product-aside { order: initial !important; }
-  .product-aside {
-    display: flex !important;
-    position: sticky !important;
-    top: 88px;
-  }
-}
-
-/* 电脑端绝不降为单列：兼容浏览器缩放导致 CSS viewport 偏小的情况 */
-@media screen and (min-width: 600px), screen and (hover: hover) and (pointer: fine) {
-  .product-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 320px !important;
-    gap: 28px !important;
-  }
-  .product-main { order: initial !important; }
-  .product-aside {
-    display: flex !important;
-    flex-direction: column !important;
-    position: sticky !important;
-    top: 88px !important;
-    order: initial !important;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
